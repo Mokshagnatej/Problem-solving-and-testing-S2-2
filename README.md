@@ -38,6 +38,6 @@
 
 <div align="center">
 
-*Last updated: 2026-08-08* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
+*Last updated: 2026-08-08* ·
 
 </div>
