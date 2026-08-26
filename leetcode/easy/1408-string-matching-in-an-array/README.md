@@ -50,7 +50,7 @@ Explanation: No string of words is substring of another string.
 **Language:** Java  
 **Runtime:** 4 ms (beats 96.99%)  
 **Memory:** 43.8 MB (beats 29.63%)  
-**Submitted:** 2026-08-26T12:20:36.635Z  
+**Submitted:** 2026-08-26T12:21:02.785Z  
 
 ```java
 import java.util.*;
