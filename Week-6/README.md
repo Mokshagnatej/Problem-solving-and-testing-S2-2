@@ -1,6 +1,6 @@
 # 🚀 Week 6: Advanced String Algorithms, Palindromes & Sliding Window
 
-Welcome to **Week 6** of the Problem Solving and Testing journey! This week centers on advanced string algorithms, sliding window frequency tracking, palindromic transformations, string invariance, and high-performance pattern matching in **Java**.
+Welcome to **Week 6** of the Problem Solving and Testing journey! This week centers on advanced string algorithms, sliding window frequency tracking, palindromic transformations, string invariance, and high-performance pattern matching in **Java**.,
 
 ---
 
