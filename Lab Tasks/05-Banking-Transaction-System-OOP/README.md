@@ -1,22 +1,53 @@
 # Experiment 5: Banking Transaction System Using Object-Oriented Programming
 
-Models a simple bank account with deposit and withdraw operations, processing a sequence of transactions and printing the final balance.
+## 📝 Problem Statement
+Simulate a simple banking system that processes a sequence of 'Deposit' and 'Withdraw' transactions and calculates the final account balance.
 
-## How to Run
+## 🧠 Core Concepts
+- **Object-Oriented Programming (OOP)**: Modeling real-world entities (Bank Account) as objects.
+- **Encapsulation**: Hiding internal state (`balance`) and restricting access via public methods (`deposit`, `withdraw`).
+- **State Management**: Maintaining an object's state across multiple method calls.
+
+## ⚙️ Algorithmic Approach & Logic
+1. **Class Design (`BankAccount`)**:
+   - The class contains a `private int balance` to prevent external modification.
+   - It exposes controlled operations: `deposit(amount)` increases the balance, and `withdraw(amount)` decreases it.
+   - A `getBalance()` method allows read-only access to the final state.
+2. **Transaction Processing (`Task5`)**:
+   - We instantiate a `BankAccount` object, which starts with a balance of $0$.
+   - For $N$ transactions, we read the operation type (`Deposit` or `Withdraw`) and the amount.
+   - Based on the string input, we dispatch the corresponding method on the `BankAccount` object.
+   - Finally, we print the updated balance.
+
+## ⏱️ Complexity Analysis
+- **Time Complexity**: $\mathcal{O}(N)$ where $N$ is the number of transactions. Each transaction is processed in $\mathcal{O}(1)$ time.
+- **Space Complexity**: $\mathcal{O}(1)$ since the `BankAccount` object uses a single integer to track the balance, regardless of how many transactions are processed.
+
+## 🚀 How to Run
+
+### Compilation and Execution
 ```bash
 javac Task5.java
 java Task5
 ```
 
-## Input Format
-```
+### Input Format
+```text
 N
-Deposit amount
-Withdraw amount
-... (N lines total)
+Operation_1 Amount_1
+Operation_2 Amount_2
+...
 ```
 
-## Approach
-Encapsulates balance and operations inside a `BankAccount` class (private state, public `deposit`/`withdraw`/`getBalance` methods), demonstrating basic OOP encapsulation.
-
-> **Note:** The original file had two bugs — the public class was named `Main` instead of `Task5` (filenames must match the public class in Java), and `main()` referenced an undefined `BankAccount` class while the actual balance logic lived in a class named `Task5`. Both are fixed here: the balance logic is in `BankAccount`, and the public entry-point class is `Task5`.
+### Sample Input/Output
+**Input:**
+```text
+3
+Deposit 1000
+Withdraw 200
+Deposit 500
+```
+**Output:**
+```text
+1300
+```
